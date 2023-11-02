@@ -360,6 +360,7 @@ ol {
     width: 264px;
     height: 40px;
     border: 1px solid #ffffff;
+    gap: 24px;
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;
