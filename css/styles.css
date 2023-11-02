@@ -352,7 +352,7 @@ ol {
     /* gap:24px; */
 }
 
-.ooster-subscrible-label{
+.ooster-subscrible-label > input{
     gap:24px;
 }
 
