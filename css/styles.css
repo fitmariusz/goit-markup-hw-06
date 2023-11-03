@@ -603,6 +603,7 @@ color: var(--color-ressed-state);
 .modal {
     position: absolute;
     padding: 72px 24px 24px 24px;
+    align-items: center;
     top: 50%;
     left: 50%;
     min-height: 584px;
@@ -748,7 +749,6 @@ color: var(--color-ressed-state);
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--color-dark);
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
     outline: transparent;
@@ -764,7 +764,9 @@ color: var(--color-ressed-state);
 } */
 
 .modal-input-div-input:focus,
-.modal-input-div-input:hover {
+.modal-input-div-input:hover,
+.modal-input-div-input:focus+svg,
+.modal-input-div-input:hover+svg{
     border-color: var(--color-primary-brand, #4d5ae5);
     fill: var(--color-primary-brand, #4d5ae5);
 }
@@ -801,9 +803,7 @@ color: var(--color-ressed-state);
     display: block;
     min-width:169px;
     height: 56px;
- 
     gap: 10px;
-    /* width: 150px; */
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
@@ -832,15 +832,21 @@ color: var(--color-ressed-state);
     align-items: center;
     justify-content: center;
     fill: transparent;
-    transition: background-color var(--var-time-tr) var(--var-translate), border var(--var-time-tr) var(--var-translate);
+    transition: background-color var(--var-time-tr) var(--var-translate), 
+                fill var(--var-time-tr) var(--var-translate), 
+                border var(--var-time-tr) var(--var-translate);
 }
 
-.modal-check:checked + label > span{
-        background-color: var(--color-primary-brand);
+.modal-check:checked + label > span,
+.modal-check:checked+label>svg{
+        background-color: var(--color-ressed-state);;
+        fill: var(--color-light);
+        border: none;
+
 }
 
 .modal-privacy-link{
-    color: wvar(--color-primary-brand);
+    color: var(--color-primary-brand);
 }
 .navi-div{
     display: inline-flex;
