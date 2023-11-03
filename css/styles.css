@@ -799,7 +799,7 @@ color: var(--color-ressed-state);
 
 .modal-form-button {
     display: block;
-    width:169px;
+    min-width:169px;
     height: 56px;
     align-items: flex-start;
     gap: 10px;
