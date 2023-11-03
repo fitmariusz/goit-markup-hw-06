@@ -802,6 +802,7 @@ color: var(--color-ressed-state);
     display: block;
     left: 50%;
     min-width:169px;
+    margin: auto;
     height: 56px;
     padding: 16px 32px;
     border: none;
