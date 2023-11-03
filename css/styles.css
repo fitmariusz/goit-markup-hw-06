@@ -658,7 +658,7 @@ color: var(--color-ressed-state);
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 
@@ -686,7 +686,7 @@ color: var(--color-ressed-state);
     flex-direction: column;
     align-items: center;
     justify-content: start; */
-    gap: 8px;
+    margin-bottom: 8px;
 }
 
 .modal-form-label {
@@ -734,7 +734,9 @@ color: var(--color-ressed-state);
     transition: border-color var(--var-time-tr) var(--var-translate);
     
 }
-
+.modal-form-texture{
+    margin-bottom: 16px;
+}
 .modal-input-div-textarea {
     display: block;
     width: 100%;
@@ -755,11 +757,11 @@ color: var(--color-ressed-state);
     resize: none;
     transition: border-color var(--var-time-tr) var(--var-translate);
 }
-.modal-input-div:focus,
+/* .modal-input-div:focus,
 .modal-input-div:hover {
     border-color: var(--color-primary-brand, #4d5ae5);
     fill: var(--color-primary-brand, #4d5ae5);
-}
+} */
 
 .modal-input-div-input:focus,
 .modal-input-div-input:hover {
