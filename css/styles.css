@@ -801,7 +801,7 @@ color: var(--color-ressed-state);
     display: block;
     min-width:169px;
     height: 56px;
-    align-items: flex-start;
+ 
     gap: 10px;
     /* width: 150px; */
     padding: 16px 32px;
@@ -823,7 +823,7 @@ color: var(--color-ressed-state);
     margin-bottom: 24px;
 }
 
-.modal-from-span{
+.modal-form-span{
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -835,8 +835,13 @@ color: var(--color-ressed-state);
     transition: background-color var(--var-time-tr) var(--var-translate), border var(--var-time-tr) var(--var-translate);
 }
 
+.modal-check:checked + label > span{
+        background-color: var(--color-primary-brand);
+}
 
-
+.modal-privacy-link{
+    color: wvar(--color-primary-brand);
+}
 .navi-div{
     display: inline-flex;
     align-items: center;
